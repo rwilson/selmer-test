@@ -1,0 +1,11 @@
+{% extends "b.html" %}
+
+{% block head %}
+{{ block.super }}
+{% style "c-style.css" %}
+<link href="c-link.css" rel="stylesheet" />
+{% endblock %}
+
+{% block world %}
+Goodbye {{ block.super }}
+{% endblock %}
